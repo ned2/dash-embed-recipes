@@ -7,8 +7,8 @@ from dash.dependencies import Input, State, Output
 from server import server
 
 app = dash.Dash(
+    __name__,
     server=server,
-    assets_folder="app2/assets",
     requests_pathname_prefix='/app2/',
     routes_pathname_prefix='/app2/',
 )
